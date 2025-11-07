@@ -3314,3 +3314,69 @@ input, select, textarea {
 			}
 
 	}
+
+/* Auto Dark Mode based on system preferences */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0d1b2a;
+        --fg: #e0e1dd;
+        --fg-bold: #ffffff;
+        --fg-light: #778da9;
+        --border: #415a77;
+        --border-bg: #1b263b;
+        --accent: #4a90e2;
+    }
+    
+    body {
+        background: #0d1b2a;
+        color: #e0e1dd;
+    }
+    
+    #wrapper {
+        background: #0d1b2a;
+    }
+    
+    #header {
+        background: #1b263b;
+    }
+    
+    #footer {
+        background: #1b263b;
+        color: #b0b0b0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff;
+    }
+    
+    strong, b {
+        color: #ffffff;
+    }
+    
+    #main > section {
+        border-top: solid 6px #1b263b;
+    }
+    
+    .box {
+        border-color: #415a77;
+        background: #1b263b;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    select,
+    textarea {
+        background: #1b263b;
+        border-color: #415a77;
+        color: #e0e1dd;
+    }
+    
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #4a90e2;
+    }
+}
