@@ -227,16 +227,50 @@
 											<p>Open to opportunities in aftermarket sales, technical support, and client advisory roles. Combining legal expertise with technical problem-solving skills.</p>
 
 											<!-- PDF Download Section -->
-									<div style="text-align: center; margin: 2em 0 3em 0; padding: 2em; background: #f8f9fa; border-radius: 8px;">
-										<h4>Download Resume</h4>
-										<p>Save a copy for your records or share with colleagues</p>
-										<a href="documents/William_Choong_Resume.pdf" class="button primary icon solid fa-download" download style="margin-top: 1em;">
-											Download PDF Version
-										</a>
-										<p style="margin-top: 1em; font-size: 0.8em; color: #666;">
-											<em>File: William_Choong_Resume.pdf • Updated: 2025</em>
-										</p>
-									</div>
+									<!-- ==== DARK-MODE-AWARE RESUME DOWNLOAD ==== -->
+<div class="resume-download">
+  <h4>Download Resume</h4>
+  <p>Save a copy for your records or share with colleagues</p>
+  <a href="documents/William_Choong_Resume.pdf"
+     class="button primary icon solid fa-download"
+     download
+     style="margin-top:1em;">
+    Download PDF Version
+  </a>
+  <p class="note">
+    <em>File: William_Choong_Resume.pdf • Updated: 2025</em>
+  </p>
+</div>
+
+<style>
+  /* Light-mode (default) */
+  .resume-download {
+    text-align:center;
+    margin:2em 0 3em;
+    padding:2em;
+    background:#f8f9fa;          /* same as your original */
+    border-radius:8px;
+  }
+
+  /* Dark-mode – triggered when the OS prefers dark */
+  @media (prefers-color-scheme: dark) {
+    .resume-download {
+      background:#2c3e50;        /* deep navy that fits the template */
+      color:#ecf0f1;             /* light text */
+    }
+    .resume-download .note { color:#bdc3c7; }
+    .resume-download a.button.primary {
+      background:#3498db;        /* keep the primary blue */
+      color:#fff;
+    }
+  }
+
+  .resume-download .note {
+    margin-top:1em;
+    font-size:0.8em;
+    color:#666;
+  }
+</style>
 
 										</div>
 									</div>
@@ -267,6 +301,7 @@
 
 	</body>
 </html>
+
 
 
 
