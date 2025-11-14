@@ -1,0 +1,185 @@
+/* ========================================
+   services.css – External Stylesheet
+   William Choong Freelance Services
+   ======================================== */
+
+/* 1. RESET & VARIABLES */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: 'Inter', sans-serif;
+  --radius: 12px;
+  --transition: all 0.3s ease;
+  --gap: 2rem;
+  --primary: #1a5fb4;
+  --primary-dark: #0d47a1;
+  --text: #2c3e50;
+  --bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --border: #eee;
+}
+
+/* Light Mode */
+body {
+  font-family: var(--font);
+  line-height: 1.7;
+  background: var(--bg);
+  color: var(--text);
+  transition: var(--transition);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e0e0e0;
+    --bg: #121212;
+    --card-bg: #1e1e1e;
+    --border: #333;
+  }
+  body { background: var(--bg); color: var(--text); }
+  input, textarea, select {
+    background: #2d2d2d !important;
+    color: #fff !important;
+    border-color: #444 !important;
+  }
+  .cta-button { background: #3498db; }
+  .cta-button:hover { background: #2980b9; }
+  .back-button { color: #bbb; }
+  .back-button:hover { color: #fff; }
+  .service-note { color: #bdc3c7; }
+}
+
+/* 2. LAYOUT */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+section { padding: 4rem 0; }
+
+/* 3. HERO */
+.services-hero {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+.services-hero h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+.services-hero .tagline { font-size: 1.3rem; opacity: 0.9; margin-top: 1rem; }
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+}
+.back-button:hover { color: white; }
+
+/* 4. SERVICE ITEMS */
+.services-detail {
+  background: var(--card-bg);
+  margin-top: -3rem;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 3rem;
+}
+.service-item {
+  margin-bottom: var(--gap);
+  padding-bottom: var(--gap);
+  border-bottom: 1px solid var(--border);
+}
+.service-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.service-item h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 0.8rem; }
+.service-item ul { margin: 1rem 0; padding-left: 1.5rem; }
+.service-item li { margin-bottom: 0.5rem; }
+.service-item li::marker { color: var(--primary); }
+.service-note {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+/* 5. FORM */
+.inquiry-form {
+  background: #f1f3f5;
+  padding: 3rem;
+  border-radius: var(--radius);
+  margin: 3rem 0;
+}
+.inquiry-form h2, .inquiry-form p { text-align: center; }
+.inquiry-form p { margin-bottom: 2rem; color: #555; }
+
+.form-group { margin-bottom: 1.2rem; }
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text);
+}
+input, textarea, select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  transition: var(--transition);
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(26,95,180,0.2);
+}
+.cta-button {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: var(--transition);
+}
+.cta-button:hover { background: var(--primary-dark); transform: translateY(-2px); }
+
+/* 6. CTA & CONTACT */
+.services-cta { text-align: center; padding: 3rem 1rem; }
+.contact-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.cta-button.secondary {
+  background: #6c757d;
+  flex: 1;
+  min-width: 180px;
+}
+.cta-button.secondary:hover { background: #5a6268; }
+
+/* 7. DISCLAIMER */
+.disclaimer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #95a5a6;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--border);
+}
+
+/* 8. RESPONSIVE */
+@media (max-width: 768px) {
+  .services-hero h1 { font-size: 2.2rem; }
+  .services-detail { margin-top: -2rem; padding: 2rem; }
+  .inquiry-form { padding: 2rem; }
+  .contact-options { flex-direction: column; }
+}
