@@ -1,130 +1,143 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Freelance Services</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>William Choong – Freelance Legal & Bilingual Services</title>
 
-<section class="services-hero">
-  <div class="container">
-    <a href="/William-Choong/" class="back-button">← Back to Main Site</a>
-    <h1>Freelance Services</h1>
-    <p class="tagline">Bridging Malaysia-China Business with Legal & Bilingual Expertise</p>
-  </div>
-</section>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<section class="services-detail">
-  <div class="container">
-    <div class="service-item">
-      <h2>Legal Research & Analysis</h2>
-      <p>I provide the foundational research you need to build your case or strategy with confidence.</p>
-      <ul>
-        <li>In-depth research on Malaysian case law, statutes, and regulations</li>
-        <li>Preparation of comprehensive legal memoranda and case summaries</li>
-        <li>Comparative legal analysis for cross-border contexts</li>
-        <li>Regulatory compliance research and analysis</li>
-      </ul>
-      <p class="service-note"><em>I deliver organized, clear, and well-sourced information to support your decision-making.</em></p>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="css/services.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="services-hero">
+    <div class="container">
+      <a href="/William-Choong/" class="back-button">Back to Main Site</a>
+      <h1>Freelance Services</h1>
+      <p class="tagline">Bridging Malaysia-China Business with Legal & Bilingual Expertise</p>
     </div>
+  </section>
 
-    <div class="service-item">
-      <h2>Document Review & Translation</h2>
-      <p>I help you navigate complex documents and language barriers with precision.</p>
-      <ul>
-        <li>Detailed review and plain-language summarization of contracts and legal documents</li>
-        <li>Professional translation of legal, business, and marketing materials (English ⇄ Mandarin)</li>
-        <li>Identification of key clauses, potential risks, and inconsistencies</li>
-        <li>Certified translation services for official documents</li>
-      </ul>
-      <p class="service-note"><em>I ensure clarity and accuracy, so you understand exactly what you're reading.</em></p>
+  <!-- SERVICES DETAIL -->
+  <section class="services-detail">
+    <div class="container">
+      <div class="service-item">
+        <h2>Legal Research & Analysis</h2>
+        <p>I provide the foundational research you need to build your case or strategy with confidence.</p>
+        <ul>
+          <li>In-depth research on Malaysian case law, statutes, and regulations</li>
+          <li>Preparation of comprehensive legal memoranda and case summaries</li>
+          <li>Comparative legal analysis for cross-border contexts</li>
+          <li>Regulatory compliance research and analysis</li>
+        </ul>
+        <p class="service-note"><em>I deliver organized, clear, and well-sourced information to support your decision-making.</em></p>
+      </div>
+
+      <div class="service-item">
+        <h2>Document Review & Translation</h2>
+        <p>I help you navigate complex documents and language barriers with precision.</p>
+        <ul>
+          <li>Detailed review and plain-language summarization of contracts and legal documents</li>
+          <li>Professional translation of legal, business, and marketing materials (English ⇄ Mandarin)</li>
+          <li>Identification of key clauses, potential risks, and inconsistencies</li>
+          <li>Certified translation services for official documents</li>
+        </ul>
+        <p class="service-note"><em>I ensure clarity and accuracy, so you understand exactly what you're reading.</em></p>
+      </div>
+
+      <div class="service-item">
+        <h2>Bilingual Business Support</h2>
+        <p>I act as your remote bilingual liaison, ensuring seamless communication and administration.</p>
+        <ul>
+          <li>Bilingual email management, scheduling, and client communication (English/Mandarin)</li>
+          <li>Support for corporate secretarial and compliance filing procedures</li>
+          <li>Virtual assistant services tailored for Malaysia-China business operations</li>
+          <li>Cross-cultural business communication and mediation</li>
+        </ul>
+        <p class="service-note"><em>I help you save time, reduce errors, and connect effectively with partners and clients.</em></p>
+      </div>
     </div>
+  </section>
 
-    <div class="service-item">
-      <h2>Bilingual Business Support</h2>
-      <p>I act as your remote bilingual liaison, ensuring seamless communication and administration.</p>
-      <ul>
-        <li>Bilingual email management, scheduling, and client communication (English/Mandarin)</li>
-        <li>Support for corporate secretarial and compliance filing procedures</li>
-        <li>Virtual assistant services tailored for Malaysia-China business operations</li>
-        <li>Cross-cultural business communication and mediation</li>
-      </ul>
-      <p class="service-note"><em>I help you save time, reduce errors, and connect effectively with partners and clients.</em></p>
+  <!-- INQUIRY FORM -->
+  <section class="inquiry-form">
+    <div class="container">
+      <h2>Project Inquiry Form</h2>
+      <p>Tell me about your project needs and I'll get back to you within 24 hours.</p>
+
+      <form action="https://formspree.io/f/mvgavjya" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="company">Company/Organization</label>
+          <input type="text" id="company" name="company" />
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Needed *</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="legal-research">Legal Research & Analysis</option>
+            <option value="document-review">Document Review & Translation</option>
+            <option value="business-support">Bilingual Business Support</option>
+            <option value="multiple">Multiple Services</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Project Budget</label>
+          <select id="budget" name="budget">
+            <option value="">Select budget range</option>
+            <option value="under-500">Under RM 500</option>
+            <option value="500-1000">RM 500 - RM 1,000</option>
+            <option value="1000-2500">RM 1,000 - RM 2,500</option>
+            <option value="2500-plus">RM 2,500+</option>
+            <option value="to-discuss">To be discussed</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Project Details *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Please describe your project requirements, timeline, and any specific needs..." required></textarea>
+        </div>
+
+        <button type="submit" class="cta-button">Submit Inquiry</button>
+      </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="inquiry-form">
-  <div class="container">
-    <h2>Project Inquiry Form</h2>
-    <p>Tell me about your project needs and I'll get back to you within 24 hours.</p>
-    
-    <form action="https://formspree.io/f/your-form-id-here" method="POST">
-      <div class="form-group">
-        <label for="name">Full Name *</label>
-        <input type="text" id="name" name="name" required>
+  <!-- DIRECT CONTACT -->
+  <section class="services-cta">
+    <div class="container">
+      <h2>Prefer Direct Contact?</h2>
+      <p>Reach out directly for a faster response.</p>
+      <div class="contact-options">
+        <a href="mailto:WILLIAM.CHOONG_@OUTLOOK.COM" class="cta-button secondary">Email Me</a>
+        <a href="https://wa.me/60167238148" class="cta-button secondary" target="_blank">WhatsApp</a>
+        <a href="/William-Choong/#five" class="cta-button secondary">View Full Contact Info</a>
       </div>
-      
-      <div class="form-group">
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      
-      <div class="form-group">
-        <label for="company">Company/Organization</label>
-        <input type="text" id="company" name="company">
-      </div>
-      
-      <div class="form-group">
-        <label for="service">Service Needed *</label>
-        <select id="service" name="service" required>
-          <option value="">Select a service</option>
-          <option value="legal-research">Legal Research & Analysis</option>
-          <option value="document-review">Document Review & Translation</option>
-          <option value="business-support">Bilingual Business Support</option>
-          <option value="multiple">Multiple Services</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="budget">Project Budget</label>
-        <select id="budget" name="budget">
-          <option value="">Select budget range</option>
-          <option value="under-500">Under RM 500</option>
-          <option value="500-1000">RM 500 - RM 1,000</option>
-          <option value="1000-2500">RM 1,000 - RM 2,500</option>
-          <option value="2500-plus">RM 2,500+</option>
-          <option value="to-discuss">To be discussed</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="message">Project Details *</label>
-        <textarea id="message" name="message" rows="5" placeholder="Please describe your project requirements, timeline, and any specific needs..." required></textarea>
-      </div>
-      
-      <button type="submit" class="cta-button">Submit Inquiry</button>
-    </form>
-  </div>
-</section>
-
-<section class="services-cta">
-  <div class="container">
-    <h2>Prefer Direct Contact?</h2>
-    <p>Reach out directly for a faster response.</p>
-    <div class="contact-options">
-      <a href="mailto:WILLIAM.CHOONG_@OUTLOOK.COM" class="cta-button secondary">Email Me</a>
-      <a href="https://wa.me/60167238148" class="cta-button secondary">WhatsApp</a>
-      <a href="/William-Choong/#five" class="cta-button">View Full Contact Info</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="disclaimer">
-  <div class="container">
-    <p><small>Please note: These are freelance support services and do not constitute legal advice from a practicing lawyer. For formal legal advice, please consult a qualified advocate and solicitor.</small></p>
-  </div>
-</section>
-  </html>
+  <!-- DISCLAIMER -->
+  <section class="disclaimer">
+    <div class="container">
+      <p><small>Please note: These are freelance support services and do not constitute legal advice from a practicing lawyer. For formal legal advice, please consult a qualified advocate and solicitor.</small></p>
+    </div>
+  </section>
+
+</body>
+</html>
