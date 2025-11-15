@@ -1,3 +1,88 @@
+/* ====================== DARK MODE ====================== */
+:root {
+  --bg: #f8fafc;
+  --text: #1e293b;
+  --primary: #0a1d37;
+  --secondary: #1e3a5f;
+  --accent: #2563eb;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --card: #ffffff;
+}
+
+.dark {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --primary: #e2e8f0;
+  --secondary: #94a3b8;
+  --accent: #60a5fa;
+  --muted: #94a3b8;
+  --border: #334155;
+  --card: #1e293b;
+}
+
+/* Apply variables */
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.services-detail,
+.services-cta {
+  background: var(--card);
+}
+
+.service-item {
+  border-bottom-color: var(--border);
+}
+
+.inquiry-form {
+  background: var(--bg);
+}
+
+.disclaimer {
+  background: var(--border);
+  color: var(--muted);
+}
+
+h1, h2, .tagline {
+  color: white !important; /* Hero text stays white */
+}
+
+.back-button,
+.cta-button,
+.cta-button.secondary {
+  border-color: transparent;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.cta-button {
+  background: var(--primary);
+}
+
+.cta-button.secondary {
+  background: var(--accent);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
 /* ====================== RESET & BASE ====================== */
 *,
 *::before,
