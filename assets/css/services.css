@@ -39,6 +39,7 @@ body {
 
 .inquiry-form {
   background: var(--bg);
+  h2: var(--text);
 }
 
 .disclaimer {
