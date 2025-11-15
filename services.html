@@ -6,6 +6,20 @@
   <title>William Choong – Freelance Legal & Bilingual Services</title>  
   <link rel="stylesheet" href="assets/css/services.css" />
 
+  <!-- Dark Mode: Auto-detect system preference -->
+  <script>
+    // Check system preference and apply 'dark' class
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    // Listen for changes in real-time
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      document.documentElement.classList.toggle('dark', e.matches);
+    });
+  </script>
   <!-- Preload Critical Assets (Optional, for speed) -->
   <!-- <link rel="preload" href="assets/css/services.css" as="style"> -->
 </head>
